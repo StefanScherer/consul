@@ -8,6 +8,7 @@ install:
 - go version
 
 build_script:
+- set PATH=C:\MINGW\bin\;%PATH%
 - scripts\windows\build.bat
 
 test_script:
