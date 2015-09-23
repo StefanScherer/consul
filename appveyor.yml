@@ -2,7 +2,7 @@ version: "{build}"
 skip_tags: true
 
 install:
-- set GOPATH
+- go --version
 
 build_script:
 - scripts\windows\build.bat
