@@ -7,7 +7,7 @@ install:
 build_script:
 - scripts\windows\build.bat
 
-test:
+test_script:
 - scripts\windows\verify_no_uuid.bat
 
 artifacts:
