@@ -6,9 +6,10 @@ environment:
 
 install:
 - go version
+- dir c:\msys64
 
 build_script:
-- set PATH=C:\MINGW\bin\;%PATH%
+- set PATH=C:\msys64;C:\MINGW\bin\;%PATH%
 - scripts\windows\build.bat
 
 test_script:
