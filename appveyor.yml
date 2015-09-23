@@ -6,7 +6,7 @@ environment:
 
 install:
 - go version
-- dir c:\msys64
+- dir c:\msys64\mingw64
 
 build_script:
 - set PATH=C:\msys64;C:\MINGW\bin\;%PATH%
