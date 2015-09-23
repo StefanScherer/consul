@@ -1,0 +1,15 @@
+version: "{build}"
+skip_tags: true
+
+install:
+- set GOPATH
+
+build_script:
+- scripts\windows\build.bat
+
+test:
+- scripts\windows\verify_no_uuid.bat
+
+artifacts:
+- path: bin/consul.exe
+  name: consul
