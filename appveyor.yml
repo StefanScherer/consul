@@ -1,6 +1,9 @@
 version: "{build}"
 skip_tags: true
 
+environment:
+  GOPATH: c:\gopath
+
 install:
 - go version
 
