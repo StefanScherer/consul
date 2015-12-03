@@ -7,6 +7,8 @@ environment:
 
 install:
 - set PATH=%GOPATH%\bin;c:\go\bin;%PATH%
+- go version
+- go env
 - mkdir c:\gopath\bin
 - mkdir %GOPATH%\src\github.com\hashicorp
 - cd ..
