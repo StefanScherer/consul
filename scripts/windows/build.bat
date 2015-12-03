@@ -38,5 +38,8 @@ go build^
  -ldflags "-X main.GitCommit=%_GIT_COMMIT%%_GIT_DIRTY% -X main.GitDescribe=%_GIT_DESCRIBE%"^
  -v^
  -o bin\consul.exe .
+echo -- done with %ERRORLEVEL%
 if errorlevel 1 exit /B 1
 copy /B /Y bin\consul.exe %GOPATH%\bin\consul.exe >NUL
+echo -- listing GOPATH/bin
+dir %GOPATH%\bin
