@@ -6,7 +6,7 @@ environment:
   GOROOT: C:\go-x86
 
 install:
-  - set PATH=%GOPATH%\bin;c:\go-x86\bin;%PATH%
+- set PATH=%GOPATH%\bin;c:\go-x86\bin;%PATH%
 - go version
 - go env
 - mkdir c:\gopath\bin
