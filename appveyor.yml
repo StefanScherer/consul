@@ -11,7 +11,7 @@ install:
 - mkdir c:\gopath\bin
 - mkdir %GOPATH%\src\github.com\hashicorp
 - cd ..
-- ren consul %GOPATH%\src\github.com\hashicorp\consul
+- move consul %GOPATH%\src\github.com\hashicorp
 - cd %GOPATH%\src\github.com\hashicorp
 - set GOPATH
 - go env
