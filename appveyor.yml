@@ -8,16 +8,13 @@ install:
 - go version
 - set PATH=%GOPATH%\bin;c:\go\bin;%PATH%
 - mkdir c:\gopath\bin
-- dir %GOPATH%
-#- dir c:\msys64\mingw64
-#- where cc1.exe
 
 build_script:
-- set PATH=C:\msys64\mingw64\bin;C:\MINGW\bin\;%PATH%
+#- set PATH=C:\msys64\mingw64\bin;C:\MINGW\bin\;%PATH%
 - make.bat
 
 test_script:
-- scripts\windows\verify_no_uuid.bat
+- make.bat test
 
 artifacts:
 - path: bin/consul.exe
