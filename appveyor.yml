@@ -9,6 +9,10 @@ install:
 - go version
 - set PATH=%GOPATH%\bin;c:\go\bin;%PATH%
 - mkdir c:\gopath\bin
+- mkdir %GOPATH%\src\github.com\hashicorp
+- cd ..
+- ren consul %GOPATH%\src\github.com\hashicorp\consul
+- cd %GOPATH%\src\github.com\hashicorp
 - set GOPATH
 - go env
 
@@ -20,5 +24,5 @@ test_script:
 - make.bat test
 
 artifacts:
-- path: bin/consul.exe
+- path: c:/gopath/src/github.com/hashicorp/consul/bin/consul.exe
   name: consul
