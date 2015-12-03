@@ -3,6 +3,7 @@ skip_tags: true
 
 environment:
   GOPATH: c:\gopath
+  GOROOT: c:\go
 
 install:
 - go version
