@@ -8,6 +8,9 @@ install:
 - go version
 - set PATH=%GOPATH%\bin;c:\go\bin;%PATH%
 - mkdir c:\gopath\bin
+- set GOPATH
+- set GOROOT
+- go env
 
 build_script:
 #- set PATH=C:\msys64\mingw64\bin;C:\MINGW\bin\;%PATH%
