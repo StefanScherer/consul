@@ -9,7 +9,6 @@ install:
 - set PATH=%GOPATH%\bin;c:\go\bin;%PATH%
 - mkdir c:\gopath\bin
 - set GOPATH
-- set GOROOT
 - go env
 
 build_script:
