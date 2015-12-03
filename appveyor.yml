@@ -11,7 +11,7 @@ install:
 
 build_script:
 - set PATH=C:\msys64\mingw64\bin;C:\MINGW\bin\;%PATH%
-- scripts\windows\build.bat
+- make.bat
 
 test_script:
 - scripts\windows\verify_no_uuid.bat
