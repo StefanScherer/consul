@@ -10,7 +10,7 @@ install:
 - where cc1.exe
 
 build_script:
-- set PATH=Cc:\msys64\mingw64\bin;C:\MINGW\bin\;%PATH%
+- set PATH=C:\msys64\mingw64\bin;C:\MINGW\bin\;%PATH%
 - scripts\windows\build.bat
 
 test_script:
