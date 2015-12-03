@@ -6,18 +6,14 @@ environment:
   GOROOT: c:\go
 
 install:
-- go version
 - set PATH=%GOPATH%\bin;c:\go\bin;%PATH%
 - mkdir c:\gopath\bin
 - mkdir %GOPATH%\src\github.com\hashicorp
 - cd ..
 - move consul %GOPATH%\src\github.com\hashicorp
-- cd %GOPATH%\src\github.com\hashicorp
-- set GOPATH
-- go env
+- cd %GOPATH%\src\github.com\hashicorp\consul
 
 build_script:
-#- set PATH=C:\msys64\mingw64\bin;C:\MINGW\bin\;%PATH%
 - make.bat
 
 test_script:
