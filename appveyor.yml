@@ -7,7 +7,8 @@ environment:
 install:
 - go version
 - set PATH=%GOPATH%\bin;c:\go\bin;%PATH%
-- mkdir %GOPATH%
+- mkdir c:\gopath\bin
+- dir %GOPATH%
 #- dir c:\msys64\mingw64
 #- where cc1.exe
 
