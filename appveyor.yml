@@ -1,0 +1,23 @@
+version: "{build}"
+skip_tags: true
+
+clone_folder: c:\gopath\src\github.com\hashicorp\consul
+
+environment:
+  GOPATH: c:\gopath
+  # activate following line for 32bit build
+  # GOROOT: C:\go-x86
+
+install:
+- set PATH=%GOPATH%\bin;%GOROOT%\bin;%PATH%
+- mkdir %GOPATH%\bin
+
+build_script:
+- make.bat
+
+test_script:
+- make.bat test
+
+artifacts:
+- path: c:/gopath/src/github.com/hashicorp/consul/bin/consul.exe
+  name: consul
