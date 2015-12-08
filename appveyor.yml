@@ -5,7 +5,8 @@ clone_folder: c:\gopath\src\github.com\hashicorp\consul
 
 environment:
   GOPATH: c:\gopath
-  GOROOT: C:\go-x86
+  # activate following line for 32bit build
+  # GOROOT: C:\go-x86
 
 install:
 - set PATH=%GOPATH%\bin;%GOROOT%\bin;%PATH%
