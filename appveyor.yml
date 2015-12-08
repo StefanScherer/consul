@@ -8,10 +8,7 @@ environment:
   GOROOT: C:\go-x86
 
 install:
-- set PATH
 - set PATH=%GOPATH%\bin;%GOROOT%\bin;%PATH%
-- go version
-- go env
 - mkdir %GOPATH%\bin
 
 build_script:
